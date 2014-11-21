@@ -3,5 +3,5 @@ language: objective-c
 before_install:
 
 script:
-	xcode_workspace: Example/BoredBoss.xcworkspace
-	xcode_scheme: BoredBossTests
+ xcode_workspace: Example/BoredBoss.xcworkspace
+ xcode_scheme: BoredBossTests
