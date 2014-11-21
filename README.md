@@ -1,7 +1,7 @@
 Boredboss
 ===============
 
-[![Build Status](http://img.shields.io/travis/Boredboss-ios-sdk.svg/Boredboss-ios-sdk.svg/master.svg?style=flat)](https://travis-ci.org/Boredboss-ios-sdk.svg/Boredboss-ios-sdk.svg)
+[![Build Status](https://travis-ci.org/meetsapp/boredboss-ios-sdk.svg?branch=master)](https://travis-ci.org/meetsapp/boredboss-ios-sdk)
 [![Pod Version](http://img.shields.io/cocoapods/v/Boredboss-ios-sdk.svg.svg?style=flat)](http://cocoadocs.org/docsets/Boredboss-ios-sdk.svg/)
 [![Pod Platform](http://img.shields.io/cocoapods/p/Boredboss-ios-sdk.svg.svg?style=flat)](http://cocoadocs.org/docsets/Boredboss-ios-sdk.svg/)
 [![Pod License](http://img.shields.io/cocoapods/l/Boredboss-ios-sdk.svg.svg?style=flat)](http://opensource.org/licenses/mit)
