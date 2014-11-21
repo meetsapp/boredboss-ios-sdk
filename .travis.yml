@@ -3,4 +3,4 @@ language: objective-c
 podfile: Example/Podfile
 
 script:
- - xctool -workspace Example/BoredBoss.xcworkspace -scheme BoredBoss -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
+ - xctool -workspace Example/BoredBoss.xcworkspace -scheme BoredBossTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO build test
