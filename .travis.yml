@@ -3,5 +3,6 @@ language: objective-c
 before_install:
 
 script:
+ podfile: Example/Podfile
  xcode_workspace: Example/BoredBoss.xcworkspace
  xcode_scheme: BoredBoss
