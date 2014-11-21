@@ -568,13 +568,14 @@ static BoredBoss *sharedInstance = nil;
             BoredBossDebug(@"%@ network failure: %@", self, error);
             break;
         }
-        
-        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&error];
-        
-        if ([[json objectForKey:@"status"] isEqualToString:@"OK"]) {
-            BoredBossDebug(@"%@ %@ api saved %ld items", self, endpoint, (unsigned long)batchSize);
-        } else {
-            BoredBossDebug(@"%@ %@ api rejected some items", self, endpoint);
+        else {
+            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&error];
+            
+            if ([[json objectForKey:@"status"] isEqualToString:@"OK"]) {
+                BoredBossDebug(@"%@ %@ api saved %ld items", self, endpoint, (unsigned long)batchSize);
+            } else {
+                BoredBossDebug(@"%@ %@ api rejected some items", self, endpoint);
+            }
         }
         
         [queue removeObjectsInArray:batch];

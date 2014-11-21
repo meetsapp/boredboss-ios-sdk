@@ -10,8 +10,8 @@
 
 #import "BoredBoss.h"
 
-#define TEST_CLIENT  @"TestClient"
-#define TEST_API_KEY @"testAPIKey"
+#define TEST_CLIENT  @"sweetbits"
+#define TEST_API_KEY @"1c57697e7615ee662d4399a371a598ce"
 
 @interface BoredBoss (Test)
 // get access to private members
