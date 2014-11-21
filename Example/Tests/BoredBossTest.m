@@ -195,6 +195,7 @@
 
 - (void)testArchive
 {
+    [self.boredboss reset];
     [self.boredboss archive];
     self.boredboss = [[BoredBoss alloc] initWithClient:TEST_CLIENT andApiKey:TEST_API_KEY launchOptions:nil andFlushInterval:0];
     
