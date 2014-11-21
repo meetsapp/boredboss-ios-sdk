@@ -8,7 +8,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "BoredBoss"
+  s.name             = "Boredboss-ios-sdk"
   s.version          = "0.1.0"
   s.summary          = "Boredboss SDK for iOS apps."
   s.description      = <<-DESC
@@ -20,22 +20,13 @@ Pod::Spec.new do |s|
                        * Track user related properties.
                        * Automatic events out-of-the-box.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BoredBoss"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/meetsapp/boredboss-ios-sdk"
   s.license          = 'MIT'
   s.author           = { "Javier Berlana" => "jberlana@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BoredBoss.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/meetsapp/boredboss-ios-sdk.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/meetsapp'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
-
   s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'BoredBoss' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,22 +1,19 @@
-# BoredBoss
+Boredboss
+===============
 
-[![CI Status](http://img.shields.io/travis/Javier Berlana/BoredBoss.svg?style=flat)](https://travis-ci.org/Javier Berlana/BoredBoss)
-[![Version](https://img.shields.io/cocoapods/v/BoredBoss.svg?style=flat)](http://cocoadocs.org/docsets/BoredBoss)
-[![License](https://img.shields.io/cocoapods/l/BoredBoss.svg?style=flat)](http://cocoadocs.org/docsets/BoredBoss)
-[![Platform](https://img.shields.io/cocoapods/p/BoredBoss.svg?style=flat)](http://cocoadocs.org/docsets/BoredBoss)
+[![Build Status](http://img.shields.io/travis/Boredboss-ios-sdk.svg/Boredboss-ios-sdk.svg/master.svg?style=flat)](https://travis-ci.org/Boredboss-ios-sdk.svg/Boredboss-ios-sdk.svg)
+[![Pod Version](http://img.shields.io/cocoapods/v/Boredboss-ios-sdk.svg.svg?style=flat)](http://cocoadocs.org/docsets/Boredboss-ios-sdk.svg/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/Boredboss-ios-sdk.svg.svg?style=flat)](http://cocoadocs.org/docsets/Boredboss-ios-sdk.svg/)
+[![Pod License](http://img.shields.io/cocoapods/l/Boredboss-ios-sdk.svg.svg?style=flat)](http://opensource.org/licenses/mit)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+**Boredboss**  is a mobile analytics SAAS developed to measure app metrics.
 
 ## Installation
 
 BoredBoss is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-    pod "BoredBoss"
+    pod "Boredboss-ios-sdk"
 
 ## Author
 
