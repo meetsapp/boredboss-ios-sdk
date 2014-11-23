@@ -1,0 +1,14 @@
+PODS:
+  - BoredBoss (0.1.0)
+
+DEPENDENCIES:
+  - BoredBoss (from `../`)
+
+EXTERNAL SOURCES:
+  BoredBoss:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BoredBoss: dcfd658c7957ca59f34c9d37be9db4d9af69bc6f
+
+COCOAPODS: 0.34.4
