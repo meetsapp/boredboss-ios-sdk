@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Boredboss-ios-sdk"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Boredboss SDK for iOS apps."
   s.description      = <<-DESC
                         Boredboss is a mobile analytics SAAS developed to measure app metrics.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/meetsapp/boredboss-ios-sdk"
   s.license          = 'MIT'
   s.author           = { "Javier Berlana" => "jberlana@gmail.com" }
-  s.source           = { :git => "https://github.com/meetsapp/boredboss-ios-sdk.git", :tag => "0.1.0" }
+  s.source           = { :git => "https://github.com/meetsapp/boredboss-ios-sdk.git", :tag => "0.1.1" }
   s.social_media_url = 'https://twitter.com/meetsapp'
 
   s.platform     = :ios, '7.0'
