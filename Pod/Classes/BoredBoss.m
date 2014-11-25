@@ -149,6 +149,7 @@ static BoredBoss *sharedInstance = nil;
                 NSString *status = [json objectForKey:@"status"];
                 if ([status isEqualToString:@"OK"]) {
                     self.aliasId = [[json objectForKey:@"user"] objectForKey:@"alias"];
+                    [self setUserProperty:k_NAME_DISTINCT_ID value:self.distinctId];
                     [self archiveProperties];
                     BoredBossDebug(@"%@ received new alias %@", self, self.aliasId);
                 }
@@ -294,6 +295,11 @@ static BoredBoss *sharedInstance = nil;
                                   k_NAME_SCREEN_HEIGHT : @((NSInteger)size.height),
                                   k_NAME_SCREEN_WIDTH  : @((NSInteger)size.width)
                                   }];
+    
+    for (NSString *key in p) {
+        [self setUserProperty:key value:self.automaticProperties[key]];
+    }
+    
     return [p copy];
 }
 

@@ -10,26 +10,26 @@
 	<string>BoredBoss</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>C31D00ACC3C43F6723E196EA5887A5E7B53896E0</key>
+		<string>https://github.com/meetsapp/boredboss-ios-sdk.git</string>
 		<key>EFF14307061FAA6F0C6C512C158EDAEA02186E1C</key>
 		<string>ssh://gitlab.sweetbits.es:2222/boredboss/ios-sdk.git</string>
-		<key>F810ACF6ACB5E90EFB06BA8656488B5BD5EC6DD9</key>
-		<string>https://github.com/meetsapp/boredboss-ios-sdk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Example/BoredBoss.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>C31D00ACC3C43F6723E196EA5887A5E7B53896E0</key>
+		<string>../..</string>
 		<key>EFF14307061FAA6F0C6C512C158EDAEA02186E1C</key>
 		<string>../../../BoredBoss</string>
-		<key>F810ACF6ACB5E90EFB06BA8656488B5BD5EC6DD9</key>
-		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/meetsapp/boredboss-ios-sdk.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>F810ACF6ACB5E90EFB06BA8656488B5BD5EC6DD9</string>
+	<string>C31D00ACC3C43F6723E196EA5887A5E7B53896E0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F810ACF6ACB5E90EFB06BA8656488B5BD5EC6DD9</string>
+			<string>C31D00ACC3C43F6723E196EA5887A5E7B53896E0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>boredboss-ios-sdk</string>
 		</dict>
