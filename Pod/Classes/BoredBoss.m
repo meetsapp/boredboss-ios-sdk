@@ -105,15 +105,16 @@ static BoredBoss *sharedInstance = nil;
         NSString *label           = [NSString stringWithFormat:@"com.BoredBoss.%@.%p", apiApiKey, self];
         self.serialQueue          = dispatch_queue_create([label UTF8String], DISPATCH_QUEUE_SERIAL);
         
-        self.distinctId           = [self defaultDistinctId];
         self.superProperties      = [NSMutableDictionary dictionary];
-        self.automaticProperties  = [self collectAutomaticProperties];
         self.eventsQueue          = [NSMutableArray array];
         self.userPropertiesQueue  = [NSMutableArray array];
         self.timedEvents          = [NSMutableDictionary dictionary];
         
         [self setupListeners];
         [self unarchive];
+        
+        self.distinctId           = [self defaultDistinctId];
+        self.automaticProperties  = [self collectAutomaticProperties];
         
         if (!self.aliasId) {
             [self generateAliasId];
@@ -146,15 +147,15 @@ static BoredBoss *sharedInstance = nil;
                 BoredBossDebug(@"%@ deserialization failure: %@", self, error);
             }
             else {
-                NSString *status = [json objectForKey:@"status"];
+                NSString *status = json[@"status"];
                 if ([status isEqualToString:@"OK"]) {
-                    self.aliasId = [[json objectForKey:@"user"] objectForKey:@"alias"];
+                    self.aliasId = [json[@"user"] objectForKey:@"alias"];
                     [self setUserProperty:k_NAME_DISTINCT_ID value:self.distinctId];
                     [self archiveProperties];
                     BoredBossDebug(@"%@ received new alias %@", self, self.aliasId);
                 }
                 else {
-                    BoredBossDebug(@"%@ %@", self, [[json objectForKey:@"error"] objectForKey:@"message"]);
+                    BoredBossDebug(@"%@ %@", self, [json[@"error"] objectForKey:@"message"]);
                 }
             }
         }
@@ -297,7 +298,7 @@ static BoredBoss *sharedInstance = nil;
                                   }];
     
     for (NSString *key in p) {
-        [self setUserProperty:key value:self.automaticProperties[key]];
+        [self setUserProperty:key value:p[key]];
     }
     
     return [p copy];
@@ -581,7 +582,7 @@ static BoredBoss *sharedInstance = nil;
         {
             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:&error];
             
-            if ([[json objectForKey:@"status"] isEqualToString:@"OK"]) {
+            if ([json[@"status"] isEqualToString:@"OK"]) {
                 BoredBossDebug(@"%@ %@ api saved %ld items", self, endpoint, (unsigned long)batchSize);
             } else {
                 BoredBossDebug(@"%@ %@ api rejected some items", self, endpoint);
